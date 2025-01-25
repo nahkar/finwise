@@ -1,9 +1,15 @@
+import { SignUpForm } from '../components/AuthForm/SignUpForm';
+
 const SignUpPage = () => {
 	return (
 		<div>
-			<h1>Sign Up</h1>
+			<SignUpForm />
 		</div>
 	);
 };
 
 export default SignUpPage;
+
+export const metadata = {
+	title: 'Create Account',
+};

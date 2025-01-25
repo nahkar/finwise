@@ -1,9 +1,21 @@
+import Link from 'next/link';
+import { SignInForm } from '../components/AuthForm/SignInForm';
+
 const SignInPage = () => {
 	return (
 		<div>
-			<h1>Sign In</h1>
+			<SignInForm />
+			<div className="mt-5 text-center">
+				<Link className="hover:underline" href={'/forgot-password'}>
+					Forgot Password?
+				</Link>
+			</div>
 		</div>
 	);
 };
 
 export default SignInPage;
+
+export const metadata = {
+	title: 'Sign In',
+};
