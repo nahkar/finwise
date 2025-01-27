@@ -79,7 +79,7 @@ export const SignInForm = () => {
 							</FormItem>
 						)}
 					/>
-					<Button className="w-full bg-customGreen text-white" type="submit">
+					<Button className="h-10 w-full bg-customGreen text-white" type="submit">
 						Sign In
 					</Button>
 				</form>
