@@ -1,4 +1,4 @@
-export const CategoriesPage = () => {
+const CategoriesPage = () => {
 	return (
 		<div className="flex items-center justify-center">
 			<div className="text-center">

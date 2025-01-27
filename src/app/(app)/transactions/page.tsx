@@ -1,4 +1,4 @@
-export const TransactionsPage = () => {
+const TransactionsPage = () => {
 	return (
 		<div className="flex items-center justify-center">
 			<div className="text-center">

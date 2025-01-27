@@ -1,4 +1,4 @@
-export const DashboardPage = () => {
+const DashboardPage = () => {
 	return (
 		<div className="flex items-center justify-center">
 			<div className="text-center">

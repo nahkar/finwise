@@ -1,4 +1,4 @@
-export const AnalysisPage = () => {
+const AnalysisPage = () => {
 	return (
 		<div className="flex items-center justify-center">
 			<div className="text-center">

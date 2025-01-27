@@ -1,4 +1,4 @@
-export const ProfilePage = () => {
+const ProfilePage = () => {
 	return (
 		<div className="flex items-center justify-center">
 			<div className="text-center">
