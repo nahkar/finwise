@@ -7,7 +7,7 @@ const SignUpPage = () => {
 			<SignUpForm />
 			<p className="mt-5 text-center">
 				Already have an account?{' '}
-				<Link className="font-semibold hover:underline" href={'/signin'}>
+				<Link className="font-semibold text-blue-500 hover:underline" href={'/signin'}>
 					Log In
 				</Link>
 			</p>

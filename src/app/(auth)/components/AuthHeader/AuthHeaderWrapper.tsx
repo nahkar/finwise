@@ -13,6 +13,14 @@ export const AuthHeaderWrapper = () => {
 				return 'Create Account';
 			case '/forgot-password':
 				return 'Forgot Password';
+			case '/terms-of-use':
+				return 'Terms Of Use';
+			case '/privacy-policy':
+				return 'Privacy Policy';
+			case '/forgot-password-confirm':
+				return 'Security pin';
+			case '/new-password':
+				return 'New password';
 			default:
 				return '';
 		}

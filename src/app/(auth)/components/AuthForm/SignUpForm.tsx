@@ -124,14 +124,17 @@ export const SignUpForm = () => {
 							</FormItem>
 						)}
 					/>
-					<div className="text-center mt-5">
+					<div className="mt-5 text-center">
 						<p>By continuing, you agree to</p>
 						<p>
-							<Link className="font-semibold hover:underline" href={'/terms-of-use'}>
+							<Link className="font-semibold text-blue-500 hover:underline" href={'/terms-of-use'}>
 								Terms of Use
 							</Link>{' '}
 							and{' '}
-							<Link className="font-semibold hover:underline" href={'/privacy-policy'}>
+							<Link
+								className="font-semibold text-blue-500 hover:underline"
+								href={'/privacy-policy'}
+							>
 								Privacy Policy
 							</Link>
 						</p>
