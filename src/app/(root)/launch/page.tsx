@@ -29,8 +29,13 @@ const Launch = () => {
 					</Link>
 				</div>
 				<div>
-					<Link className="hover:underline" href={'/forgot-password'}>
+					<Link className="text-blue-500 hover:underline" href={'/forgot-password'}>
 						Forgot Password?
+					</Link>
+				</div>
+				<div className="mt-5">
+					<Link className="hover:underline" href={'/dashboard'}>
+						Temporary Link Home
 					</Link>
 				</div>
 			</div>
