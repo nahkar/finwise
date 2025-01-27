@@ -78,6 +78,10 @@ export const SecurityPinForm = () => {
 					</Button>
 				</form>
 			</Form>
+			<div className="mt-5 text-center">
+				<p className="mb-5">If you haven’t received a code, please</p>
+				<Button className="h-10 w-2/6 bg-customGreen text-white">Send again</Button>
+			</div>
 		</div>
 	);
 };
