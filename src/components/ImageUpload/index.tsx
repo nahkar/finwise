@@ -2,7 +2,6 @@
 import { config } from '@/lib/config';
 import { IKImage, ImageKitProvider, IKUpload } from 'imagekitio-next';
 import { useRef, useState } from 'react';
-import Image from 'next/image';
 import { Upload } from 'lucide-react';
 import {
 	IKUploadResponse,
@@ -72,7 +71,11 @@ const ImageUpload = ({ onFileChange }: Props) => {
 				<Upload size={14} />
 				<div>
 					{!file && <p className="text-light-100 text-base flex items-center">Upload a file</p>}
-					{file && <p className="upload-filename text-light-100 text-base text-ellipsis overflow-hidden whitespace-nowrap w-40">{file.filePath}</p>}
+					{file && (
+						<p className="upload-filename text-light-100 text-base text-ellipsis overflow-hidden whitespace-nowrap w-40">
+							{file.filePath}
+						</p>
+					)}
 				</div>
 			</button>
 
