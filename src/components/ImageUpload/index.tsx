@@ -3,6 +3,7 @@ import { config } from '@/lib/config';
 import { IKImage, ImageKitProvider, IKUpload } from 'imagekitio-next';
 import { useRef, useState } from 'react';
 import Image from 'next/image';
+import { Upload } from 'lucide-react';
 import {
 	IKUploadResponse,
 	UploadError,
@@ -60,7 +61,7 @@ const ImageUpload = ({ onFileChange }: Props) => {
 				fileName="test-upload.png"
 			/>
 			<button
-				className="upload-btn"
+				className="mb-3 mx-auto flex gap-2 h-10 w-52 items-center justify-center rounded-md bg-customGreen text-center text-base text-white hover:bg-customGreen-light"
 				onClick={(e) => {
 					e.preventDefault();
 					if (ikUploadRef.current) {
@@ -68,15 +69,11 @@ const ImageUpload = ({ onFileChange }: Props) => {
 					}
 				}}
 			>
-				<Image
-					src="/icons/upload.svg"
-					alt="upload-icon"
-					width={20}
-					height={20}
-					className="object-contain"
-				/>
-				<p className="text-light-100 text-base">Upload a file</p>
-				{file && <p className="upload-filename">{file.filePath}</p>}
+				<Upload size={14} />
+				<div>
+					{!file && <p className="text-light-100 text-base flex items-center">Upload a file</p>}
+					{file && <p className="upload-filename text-light-100 text-base text-ellipsis overflow-hidden whitespace-nowrap w-40">{file.filePath}</p>}
+				</div>
 			</button>
 
 			{file && <IKImage path={file.filePath} alt={file.filePath} width={500} height={500} />}
