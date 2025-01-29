@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import ImageUpload from '@/components/ImageUpload';
 
 const DashboardPage = () => {
